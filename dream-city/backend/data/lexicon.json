@@ -1,0 +1,1978 @@
+{
+  "_stopwords": [
+    "the",
+    "and",
+    "with",
+    "from",
+    "that",
+    "this",
+    "then",
+    "were",
+    "was",
+    "have",
+    "had",
+    "into",
+    "على",
+    "في",
+    "من",
+    "إلى",
+    "عن",
+    "كان",
+    "كانت",
+    "ثم",
+    "مع",
+    "هذا",
+    "هذه",
+    "أنا",
+    "هو",
+    "هي",
+    "رأيت",
+    "رأيتُ"
+  ],
+  "بحر": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.4
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 2.1
+    }
+  ],
+  "محيط": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.6
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 1.8
+    }
+  ],
+  "شاطئ": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.2
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 2.2
+    }
+  ],
+  "موج": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.0
+    }
+  ],
+  "ماء": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.0
+    }
+  ],
+  "صحراء": [
+    {
+      "category": "environment",
+      "value": "desert",
+      "weight": 2.7
+    },
+    {
+      "category": "place",
+      "value": "dunes",
+      "weight": 2.1
+    }
+  ],
+  "رمل": [
+    {
+      "category": "environment",
+      "value": "desert",
+      "weight": 2.1
+    }
+  ],
+  "غابة": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 2.7
+    },
+    {
+      "category": "place",
+      "value": "forest",
+      "weight": 2.0
+    }
+  ],
+  "شجرة": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 1.9
+    },
+    {
+      "category": "keyword",
+      "value": "nature",
+      "weight": 1.2
+    }
+  ],
+  "ثلج": [
+    {
+      "category": "environment",
+      "value": "snow",
+      "weight": 2.7
+    },
+    {
+      "category": "weather",
+      "value": "snow",
+      "weight": 2.3
+    }
+  ],
+  "جليد": [
+    {
+      "category": "environment",
+      "value": "snow",
+      "weight": 2.4
+    },
+    {
+      "category": "weather",
+      "value": "snow",
+      "weight": 2.4
+    }
+  ],
+  "سماء": [
+    {
+      "category": "environment",
+      "value": "sky",
+      "weight": 1.5
+    }
+  ],
+  "فضاء": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 3.0
+    },
+    {
+      "category": "dream_type",
+      "value": "cosmic",
+      "weight": 2.2
+    }
+  ],
+  "نجوم": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 2.4
+    },
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 1.5
+    },
+    {
+      "category": "entity",
+      "value": "celestial",
+      "weight": 1.8
+    }
+  ],
+  "مطر": [
+    {
+      "category": "weather",
+      "value": "rain",
+      "weight": 2.7
+    },
+    {
+      "category": "environment",
+      "value": "wet",
+      "weight": 1.4
+    }
+  ],
+  "ضباب": [
+    {
+      "category": "weather",
+      "value": "fog",
+      "weight": 2.6
+    }
+  ],
+  "عاصفة": [
+    {
+      "category": "weather",
+      "value": "storm",
+      "weight": 2.8
+    }
+  ],
+  "ريح": [
+    {
+      "category": "weather",
+      "value": "wind",
+      "weight": 2.1
+    }
+  ],
+  "شمس": [
+    {
+      "category": "weather",
+      "value": "sun",
+      "weight": 1.8
+    },
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 1.5
+    }
+  ],
+  "ليل": [
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 2.6
+    }
+  ],
+  "نهار": [
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 2.3
+    }
+  ],
+  "فجر": [
+    {
+      "category": "time",
+      "value": "dawn",
+      "weight": 2.5
+    }
+  ],
+  "غروب": [
+    {
+      "category": "time",
+      "value": "sunset",
+      "weight": 2.5
+    }
+  ],
+  "أحمر": [
+    {
+      "category": "color",
+      "value": "red",
+      "weight": 2.0
+    }
+  ],
+  "أزرق": [
+    {
+      "category": "color",
+      "value": "blue",
+      "weight": 2.0
+    }
+  ],
+  "أخضر": [
+    {
+      "category": "color",
+      "value": "green",
+      "weight": 2.0
+    }
+  ],
+  "ذهبي": [
+    {
+      "category": "color",
+      "value": "gold",
+      "weight": 2.0
+    }
+  ],
+  "بنفسجي": [
+    {
+      "category": "color",
+      "value": "violet",
+      "weight": 2.0
+    }
+  ],
+  "أبيض": [
+    {
+      "category": "color",
+      "value": "white",
+      "weight": 1.9
+    }
+  ],
+  "أسود": [
+    {
+      "category": "color",
+      "value": "black",
+      "weight": 1.9
+    }
+  ],
+  "سعيد": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 2.5
+    }
+  ],
+  "فرح": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 2.5
+    }
+  ],
+  "خوف": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.6
+    }
+  ],
+  "خائف": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.6
+    }
+  ],
+  "حزن": [
+    {
+      "category": "emotion",
+      "value": "sadness",
+      "weight": 2.4
+    }
+  ],
+  "وحدة": [
+    {
+      "category": "emotion",
+      "value": "loneliness",
+      "weight": 2.4
+    }
+  ],
+  "حب": [
+    {
+      "category": "emotion",
+      "value": "love",
+      "weight": 2.4
+    }
+  ],
+  "غضب": [
+    {
+      "category": "emotion",
+      "value": "anger",
+      "weight": 2.5
+    }
+  ],
+  "سلام": [
+    {
+      "category": "emotion",
+      "value": "peace",
+      "weight": 2.4
+    },
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 2.0
+    }
+  ],
+  "قلق": [
+    {
+      "category": "emotion",
+      "value": "anxiety",
+      "weight": 2.4
+    },
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.1
+    }
+  ],
+  "مدينة": [
+    {
+      "category": "place",
+      "value": "city",
+      "weight": 1.8
+    },
+    {
+      "category": "environment",
+      "value": "city",
+      "weight": 2.0
+    }
+  ],
+  "برج": [
+    {
+      "category": "place",
+      "value": "tower",
+      "weight": 2.2
+    },
+    {
+      "category": "entity",
+      "value": "buildings",
+      "weight": 1.7
+    }
+  ],
+  "قصر": [
+    {
+      "category": "place",
+      "value": "palace",
+      "weight": 2.2
+    }
+  ],
+  "شارع": [
+    {
+      "category": "place",
+      "value": "street",
+      "weight": 1.8
+    },
+    {
+      "category": "environment",
+      "value": "city",
+      "weight": 2.0
+    }
+  ],
+  "منزل": [
+    {
+      "category": "place",
+      "value": "home",
+      "weight": 1.8
+    },
+    {
+      "category": "entity",
+      "value": "buildings",
+      "weight": 1.7
+    }
+  ],
+  "مدرسة": [
+    {
+      "category": "place",
+      "value": "school",
+      "weight": 1.6
+    }
+  ],
+  "كنيسة": [
+    {
+      "category": "place",
+      "value": "sanctuary",
+      "weight": 1.6
+    }
+  ],
+  "مسجد": [
+    {
+      "category": "place",
+      "value": "sanctuary",
+      "weight": 1.6
+    }
+  ],
+  "سفر": [
+    {
+      "category": "dream_type",
+      "value": "journey",
+      "weight": 2.3
+    }
+  ],
+  "طيران": [
+    {
+      "category": "dream_type",
+      "value": "flight",
+      "weight": 2.6
+    },
+    {
+      "category": "motion",
+      "value": "flight",
+      "weight": 2.4
+    }
+  ],
+  "سقوط": [
+    {
+      "category": "dream_type",
+      "value": "fall",
+      "weight": 2.7
+    },
+    {
+      "category": "motion",
+      "value": "fall",
+      "weight": 2.4
+    }
+  ],
+  "مطاردة": [
+    {
+      "category": "dream_type",
+      "value": "chase",
+      "weight": 2.7
+    }
+  ],
+  "تحول": [
+    {
+      "category": "dream_type",
+      "value": "transformation",
+      "weight": 2.6
+    }
+  ],
+  "بوابة": [
+    {
+      "category": "dream_type",
+      "value": "portal",
+      "weight": 2.8
+    },
+    {
+      "category": "dream_type",
+      "value": "threshold",
+      "weight": 1.8
+    }
+  ],
+  "غرق": [
+    {
+      "category": "dream_type",
+      "value": "submersion",
+      "weight": 2.6
+    }
+  ],
+  "dream": [
+    {
+      "category": "keyword",
+      "value": "reflection",
+      "weight": 0.7
+    }
+  ],
+  "sea": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.4
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 2.0
+    }
+  ],
+  "ocean": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.6
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 1.8
+    }
+  ],
+  "beach": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.2
+    },
+    {
+      "category": "place",
+      "value": "coast",
+      "weight": 2.1
+    }
+  ],
+  "wave": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.0
+    }
+  ],
+  "water": [
+    {
+      "category": "environment",
+      "value": "water",
+      "weight": 2.0
+    }
+  ],
+  "desert": [
+    {
+      "category": "environment",
+      "value": "desert",
+      "weight": 2.7
+    },
+    {
+      "category": "place",
+      "value": "dunes",
+      "weight": 2.1
+    }
+  ],
+  "sand": [
+    {
+      "category": "environment",
+      "value": "desert",
+      "weight": 2.1
+    }
+  ],
+  "forest": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 2.7
+    },
+    {
+      "category": "place",
+      "value": "forest",
+      "weight": 2.0
+    }
+  ],
+  "tree": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 1.9
+    }
+  ],
+  "snow": [
+    {
+      "category": "environment",
+      "value": "snow",
+      "weight": 2.7
+    },
+    {
+      "category": "weather",
+      "value": "snow",
+      "weight": 2.3
+    }
+  ],
+  "ice": [
+    {
+      "category": "environment",
+      "value": "snow",
+      "weight": 2.4
+    }
+  ],
+  "space": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 3.0
+    },
+    {
+      "category": "dream_type",
+      "value": "cosmic",
+      "weight": 2.2
+    }
+  ],
+  "stars": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 2.4
+    },
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 1.5
+    }
+  ],
+  "rain": [
+    {
+      "category": "weather",
+      "value": "rain",
+      "weight": 2.7
+    },
+    {
+      "category": "environment",
+      "value": "wet",
+      "weight": 1.4
+    }
+  ],
+  "fog": [
+    {
+      "category": "weather",
+      "value": "fog",
+      "weight": 2.6
+    }
+  ],
+  "storm": [
+    {
+      "category": "weather",
+      "value": "storm",
+      "weight": 2.8
+    }
+  ],
+  "wind": [
+    {
+      "category": "weather",
+      "value": "wind",
+      "weight": 2.1
+    }
+  ],
+  "sun": [
+    {
+      "category": "weather",
+      "value": "sun",
+      "weight": 1.8
+    },
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 1.5
+    }
+  ],
+  "night": [
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 2.6
+    }
+  ],
+  "day": [
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 2.3
+    }
+  ],
+  "dawn": [
+    {
+      "category": "time",
+      "value": "dawn",
+      "weight": 2.5
+    }
+  ],
+  "sunset": [
+    {
+      "category": "time",
+      "value": "sunset",
+      "weight": 2.5
+    }
+  ],
+  "red": [
+    {
+      "category": "color",
+      "value": "red",
+      "weight": 2.0
+    }
+  ],
+  "blue": [
+    {
+      "category": "color",
+      "value": "blue",
+      "weight": 2.0
+    }
+  ],
+  "green": [
+    {
+      "category": "color",
+      "value": "green",
+      "weight": 2.0
+    }
+  ],
+  "gold": [
+    {
+      "category": "color",
+      "value": "gold",
+      "weight": 2.0
+    }
+  ],
+  "violet": [
+    {
+      "category": "color",
+      "value": "violet",
+      "weight": 2.0
+    }
+  ],
+  "white": [
+    {
+      "category": "color",
+      "value": "white",
+      "weight": 1.9
+    }
+  ],
+  "black": [
+    {
+      "category": "color",
+      "value": "black",
+      "weight": 1.9
+    }
+  ],
+  "happy": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 2.5
+    }
+  ],
+  "joy": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 2.5
+    }
+  ],
+  "fear": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.6
+    }
+  ],
+  "scared": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.6
+    }
+  ],
+  "sad": [
+    {
+      "category": "emotion",
+      "value": "sadness",
+      "weight": 2.4
+    }
+  ],
+  "lonely": [
+    {
+      "category": "emotion",
+      "value": "loneliness",
+      "weight": 2.4
+    }
+  ],
+  "love": [
+    {
+      "category": "emotion",
+      "value": "love",
+      "weight": 2.4
+    }
+  ],
+  "anger": [
+    {
+      "category": "emotion",
+      "value": "anger",
+      "weight": 2.5
+    }
+  ],
+  "peace": [
+    {
+      "category": "emotion",
+      "value": "peace",
+      "weight": 2.4
+    }
+  ],
+  "anxiety": [
+    {
+      "category": "emotion",
+      "value": "anxiety",
+      "weight": 2.4
+    }
+  ],
+  "city": [
+    {
+      "category": "place",
+      "value": "city",
+      "weight": 1.8
+    }
+  ],
+  "tower": [
+    {
+      "category": "place",
+      "value": "tower",
+      "weight": 2.2
+    }
+  ],
+  "palace": [
+    {
+      "category": "place",
+      "value": "palace",
+      "weight": 2.2
+    }
+  ],
+  "street": [
+    {
+      "category": "place",
+      "value": "street",
+      "weight": 1.8
+    }
+  ],
+  "house": [
+    {
+      "category": "place",
+      "value": "home",
+      "weight": 1.8
+    }
+  ],
+  "school": [
+    {
+      "category": "place",
+      "value": "school",
+      "weight": 1.6
+    }
+  ],
+  "journey": [
+    {
+      "category": "dream_type",
+      "value": "journey",
+      "weight": 2.3
+    }
+  ],
+  "flying": [
+    {
+      "category": "dream_type",
+      "value": "flight",
+      "weight": 2.6
+    }
+  ],
+  "flight": [
+    {
+      "category": "dream_type",
+      "value": "flight",
+      "weight": 2.6
+    }
+  ],
+  "falling": [
+    {
+      "category": "dream_type",
+      "value": "fall",
+      "weight": 2.7
+    }
+  ],
+  "fall": [
+    {
+      "category": "dream_type",
+      "value": "fall",
+      "weight": 2.7
+    }
+  ],
+  "chase": [
+    {
+      "category": "dream_type",
+      "value": "chase",
+      "weight": 2.7
+    }
+  ],
+  "transformation": [
+    {
+      "category": "dream_type",
+      "value": "transformation",
+      "weight": 2.6
+    }
+  ],
+  "portal": [
+    {
+      "category": "dream_type",
+      "value": "portal",
+      "weight": 2.8
+    }
+  ],
+  "drowning": [
+    {
+      "category": "dream_type",
+      "value": "submersion",
+      "weight": 2.6
+    }
+  ],
+  "توتر": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.1
+    }
+  ],
+  "رعب": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.1
+    }
+  ],
+  "ذعر": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.1
+    }
+  ],
+  "فزع": [
+    {
+      "category": "emotion",
+      "value": "fear",
+      "weight": 2.1
+    }
+  ],
+  "سعادة": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 1.9
+    }
+  ],
+  "سَرور": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 1.9
+    }
+  ],
+  "سرور": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 1.9
+    }
+  ],
+  "ابتهاج": [
+    {
+      "category": "emotion",
+      "value": "joy",
+      "weight": 1.9
+    }
+  ],
+  "بكاء": [
+    {
+      "category": "emotion",
+      "value": "sadness",
+      "weight": 1.9
+    }
+  ],
+  "كآبة": [
+    {
+      "category": "emotion",
+      "value": "sadness",
+      "weight": 1.9
+    }
+  ],
+  "حنان": [
+    {
+      "category": "emotion",
+      "value": "love",
+      "weight": 1.8
+    }
+  ],
+  "عاطفة": [
+    {
+      "category": "emotion",
+      "value": "love",
+      "weight": 1.8
+    }
+  ],
+  "هدوء": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 2.0
+    }
+  ],
+  "راحة": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 2.0
+    }
+  ],
+  "طمأنينة": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 2.0
+    }
+  ],
+  "سكينة": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 2.0
+    }
+  ],
+  "دهشة": [
+    {
+      "category": "emotion",
+      "value": "wonder",
+      "weight": 1.7
+    }
+  ],
+  "اندهاش": [
+    {
+      "category": "emotion",
+      "value": "wonder",
+      "weight": 1.7
+    }
+  ],
+  "انبهار": [
+    {
+      "category": "emotion",
+      "value": "wonder",
+      "weight": 1.7
+    }
+  ],
+  "أمطار": [
+    {
+      "category": "weather",
+      "value": "rain",
+      "weight": 2.3
+    }
+  ],
+  "رذاذ": [
+    {
+      "category": "weather",
+      "value": "rain",
+      "weight": 2.3
+    }
+  ],
+  "غشاوة": [
+    {
+      "category": "weather",
+      "value": "fog",
+      "weight": 2.2
+    }
+  ],
+  "إعصار": [
+    {
+      "category": "weather",
+      "value": "storm",
+      "weight": 2.5
+    }
+  ],
+  "رعد": [
+    {
+      "category": "weather",
+      "value": "storm",
+      "weight": 2.5
+    }
+  ],
+  "برق": [
+    {
+      "category": "weather",
+      "value": "storm",
+      "weight": 2.5
+    }
+  ],
+  "ثلوج": [
+    {
+      "category": "weather",
+      "value": "snow",
+      "weight": 2.4
+    }
+  ],
+  "مشمس": [
+    {
+      "category": "weather",
+      "value": "sun",
+      "weight": 1.8
+    }
+  ],
+  "رياح": [
+    {
+      "category": "weather",
+      "value": "wind",
+      "weight": 1.7
+    }
+  ],
+  "نسيم": [
+    {
+      "category": "weather",
+      "value": "wind",
+      "weight": 1.7
+    }
+  ],
+  "ليلاً": [
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 2.2
+    }
+  ],
+  "ليلا": [
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 2.2
+    }
+  ],
+  "مساء": [
+    {
+      "category": "time",
+      "value": "night",
+      "weight": 2.2
+    }
+  ],
+  "صباح": [
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 1.8
+    }
+  ],
+  "ظهر": [
+    {
+      "category": "time",
+      "value": "day",
+      "weight": 1.8
+    }
+  ],
+  "شروق": [
+    {
+      "category": "time",
+      "value": "dawn",
+      "weight": 2.1
+    }
+  ],
+  "مغيب": [
+    {
+      "category": "time",
+      "value": "sunset",
+      "weight": 2.2
+    }
+  ],
+  "كثبان": [
+    {
+      "category": "environment",
+      "value": "desert",
+      "weight": 2.5
+    }
+  ],
+  "أشجار": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 2.4
+    }
+  ],
+  "شجر": [
+    {
+      "category": "environment",
+      "value": "forest",
+      "weight": 2.4
+    }
+  ],
+  "جبال": [
+    {
+      "category": "environment",
+      "value": "mountains",
+      "weight": 2.2
+    }
+  ],
+  "جبل": [
+    {
+      "category": "environment",
+      "value": "mountains",
+      "weight": 2.2
+    }
+  ],
+  "وادي": [
+    {
+      "category": "environment",
+      "value": "mountains",
+      "weight": 2.2
+    }
+  ],
+  "مدينه": [
+    {
+      "category": "environment",
+      "value": "city",
+      "weight": 2.0
+    }
+  ],
+  "شوارع": [
+    {
+      "category": "environment",
+      "value": "city",
+      "weight": 2.0
+    }
+  ],
+  "قرية": [
+    {
+      "category": "environment",
+      "value": "village",
+      "weight": 1.8
+    }
+  ],
+  "قرى": [
+    {
+      "category": "environment",
+      "value": "village",
+      "weight": 1.8
+    }
+  ],
+  "كواكب": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 2.7
+    }
+  ],
+  "كوكب": [
+    {
+      "category": "environment",
+      "value": "space",
+      "weight": 2.7
+    }
+  ],
+  "سحاب": [
+    {
+      "category": "environment",
+      "value": "sky",
+      "weight": 1.5
+    }
+  ],
+  "يطير": [
+    {
+      "category": "motion",
+      "value": "flight",
+      "weight": 2.4
+    }
+  ],
+  "طرت": [
+    {
+      "category": "motion",
+      "value": "flight",
+      "weight": 2.4
+    }
+  ],
+  "تحليق": [
+    {
+      "category": "motion",
+      "value": "flight",
+      "weight": 2.4
+    }
+  ],
+  "تحلق": [
+    {
+      "category": "motion",
+      "value": "flight",
+      "weight": 2.4
+    }
+  ],
+  "سقط": [
+    {
+      "category": "motion",
+      "value": "fall",
+      "weight": 2.4
+    }
+  ],
+  "أسقط": [
+    {
+      "category": "motion",
+      "value": "fall",
+      "weight": 2.4
+    }
+  ],
+  "جري": [
+    {
+      "category": "motion",
+      "value": "running",
+      "weight": 2.1
+    }
+  ],
+  "يركض": [
+    {
+      "category": "motion",
+      "value": "running",
+      "weight": 2.1
+    }
+  ],
+  "ركض": [
+    {
+      "category": "motion",
+      "value": "running",
+      "weight": 2.1
+    }
+  ],
+  "مشي": [
+    {
+      "category": "motion",
+      "value": "walking",
+      "weight": 1.5
+    }
+  ],
+  "يمشي": [
+    {
+      "category": "motion",
+      "value": "walking",
+      "weight": 1.5
+    }
+  ],
+  "مشيت": [
+    {
+      "category": "motion",
+      "value": "walking",
+      "weight": 1.5
+    }
+  ],
+  "سباحة": [
+    {
+      "category": "motion",
+      "value": "swimming",
+      "weight": 2.2
+    }
+  ],
+  "سبحت": [
+    {
+      "category": "motion",
+      "value": "swimming",
+      "weight": 2.2
+    }
+  ],
+  "يسبح": [
+    {
+      "category": "motion",
+      "value": "swimming",
+      "weight": 2.2
+    }
+  ],
+  "قفز": [
+    {
+      "category": "motion",
+      "value": "jumping",
+      "weight": 1.8
+    }
+  ],
+  "قفزت": [
+    {
+      "category": "motion",
+      "value": "jumping",
+      "weight": 1.8
+    }
+  ],
+  "شخص": [
+    {
+      "category": "entity",
+      "value": "people",
+      "weight": 1.5
+    }
+  ],
+  "رجل": [
+    {
+      "category": "entity",
+      "value": "people",
+      "weight": 1.5
+    }
+  ],
+  "امرأة": [
+    {
+      "category": "entity",
+      "value": "people",
+      "weight": 1.5
+    }
+  ],
+  "طفل": [
+    {
+      "category": "entity",
+      "value": "people",
+      "weight": 1.5
+    }
+  ],
+  "ناس": [
+    {
+      "category": "entity",
+      "value": "people",
+      "weight": 1.5
+    }
+  ],
+  "حصان": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "كلب": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "قطة": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "طائر": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "طيور": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "ذئب": [
+    {
+      "category": "entity",
+      "value": "animals",
+      "weight": 1.7
+    }
+  ],
+  "سيارة": [
+    {
+      "category": "entity",
+      "value": "vehicles",
+      "weight": 1.6
+    }
+  ],
+  "سيارات": [
+    {
+      "category": "entity",
+      "value": "vehicles",
+      "weight": 1.6
+    }
+  ],
+  "قطار": [
+    {
+      "category": "entity",
+      "value": "vehicles",
+      "weight": 1.6
+    }
+  ],
+  "مبنى": [
+    {
+      "category": "entity",
+      "value": "buildings",
+      "weight": 1.7
+    }
+  ],
+  "مباني": [
+    {
+      "category": "entity",
+      "value": "buildings",
+      "weight": 1.7
+    }
+  ],
+  "بيت": [
+    {
+      "category": "entity",
+      "value": "buildings",
+      "weight": 1.7
+    }
+  ],
+  "نجم": [
+    {
+      "category": "entity",
+      "value": "celestial",
+      "weight": 1.8
+    }
+  ],
+  "قمر": [
+    {
+      "category": "entity",
+      "value": "celestial",
+      "weight": 1.8
+    }
+  ],
+  "نهر": [
+    {
+      "category": "entity",
+      "value": "water",
+      "weight": 1.8
+    }
+  ],
+  "بحيرة": [
+    {
+      "category": "entity",
+      "value": "water",
+      "weight": 1.8
+    }
+  ],
+  "حمراء": [
+    {
+      "category": "color",
+      "value": "red",
+      "weight": 1.7
+    }
+  ],
+  "زرقاء": [
+    {
+      "category": "color",
+      "value": "blue",
+      "weight": 1.7
+    }
+  ],
+  "خضراء": [
+    {
+      "category": "color",
+      "value": "green",
+      "weight": 1.7
+    }
+  ],
+  "ذهبية": [
+    {
+      "category": "color",
+      "value": "gold",
+      "weight": 1.7
+    }
+  ],
+  "بنفسجية": [
+    {
+      "category": "color",
+      "value": "violet",
+      "weight": 1.6
+    }
+  ],
+  "بيضاء": [
+    {
+      "category": "color",
+      "value": "white",
+      "weight": 1.4
+    }
+  ],
+  "سوداء": [
+    {
+      "category": "color",
+      "value": "black",
+      "weight": 1.4
+    }
+  ],
+  "برتقالي": [
+    {
+      "category": "color",
+      "value": "orange",
+      "weight": 1.6
+    }
+  ],
+  "برتقالية": [
+    {
+      "category": "color",
+      "value": "orange",
+      "weight": 1.6
+    }
+  ],
+  "حلم": [
+    {
+      "category": "dream_type",
+      "value": "mysterious",
+      "weight": 1.7
+    }
+  ],
+  "غريب": [
+    {
+      "category": "dream_type",
+      "value": "mysterious",
+      "weight": 1.7
+    }
+  ],
+  "غموض": [
+    {
+      "category": "dream_type",
+      "value": "mysterious",
+      "weight": 1.7
+    }
+  ],
+  "لغز": [
+    {
+      "category": "dream_type",
+      "value": "mysterious",
+      "weight": 1.7
+    }
+  ],
+  "سحر": [
+    {
+      "category": "dream_type",
+      "value": "magical",
+      "weight": 2.0
+    }
+  ],
+  "سحري": [
+    {
+      "category": "dream_type",
+      "value": "magical",
+      "weight": 2.0
+    }
+  ],
+  "خيال": [
+    {
+      "category": "dream_type",
+      "value": "magical",
+      "weight": 2.0
+    }
+  ],
+  "كوني": [
+    {
+      "category": "dream_type",
+      "value": "cosmic",
+      "weight": 2.2
+    }
+  ],
+  "يلاحق": [
+    {
+      "category": "dream_type",
+      "value": "chase",
+      "weight": 2.0
+    }
+  ],
+  "باب": [
+    {
+      "category": "dream_type",
+      "value": "threshold",
+      "weight": 1.8
+    }
+  ],
+  "مفتاح": [
+    {
+      "category": "dream_type",
+      "value": "threshold",
+      "weight": 1.8
+    }
+  ],
+  "انعكاس": [
+    {
+      "category": "light",
+      "value": "glow",
+      "weight": 1.6
+    }
+  ],
+  "انعكاسات": [
+    {
+      "category": "light",
+      "value": "glow",
+      "weight": 1.6
+    }
+  ],
+  "مضيء": [
+    {
+      "category": "light",
+      "value": "glow",
+      "weight": 1.6
+    }
+  ],
+  "أضواء": [
+    {
+      "category": "light",
+      "value": "glow",
+      "weight": 1.6
+    }
+  ],
+  "نور": [
+    {
+      "category": "light",
+      "value": "glow",
+      "weight": 1.6
+    }
+  ],
+  "ظلام": [
+    {
+      "category": "light",
+      "value": "dark",
+      "weight": 2.0
+    }
+  ],
+  "مظلم": [
+    {
+      "category": "light",
+      "value": "dark",
+      "weight": 2.0
+    }
+  ],
+  "عتمة": [
+    {
+      "category": "light",
+      "value": "dark",
+      "weight": 2.0
+    }
+  ],
+  "ضوء": [
+    {
+      "category": "light",
+      "value": "radiant",
+      "weight": 1.7
+    }
+  ],
+  "لامع": [
+    {
+      "category": "light",
+      "value": "radiant",
+      "weight": 1.7
+    }
+  ],
+  "توهج": [
+    {
+      "category": "light",
+      "value": "radiant",
+      "weight": 1.7
+    }
+  ],
+  "_phrases": {
+    "ar": {
+      "بهدوء وراحة": [
+        {
+          "category": "emotion",
+          "value": "calm",
+          "weight": 2.8
+        }
+      ],
+      "شعرت بالخوف": [
+        {
+          "category": "emotion",
+          "value": "fear",
+          "weight": 3.0
+        }
+      ],
+      "شعرت بالراحة": [
+        {
+          "category": "emotion",
+          "value": "calm",
+          "weight": 2.8
+        }
+      ],
+      "سماء مليئة بالنجوم": [
+        {
+          "category": "environment",
+          "value": "space",
+          "weight": 2.4
+        },
+        {
+          "category": "time",
+          "value": "night",
+          "weight": 1.7
+        }
+      ],
+      "انعكاس الضوء على الماء": [
+        {
+          "category": "light",
+          "value": "glow",
+          "weight": 2.5
+        },
+        {
+          "category": "environment",
+          "value": "water",
+          "weight": 1.7
+        }
+      ],
+      "مدينة هادئة": [
+        {
+          "category": "environment",
+          "value": "city",
+          "weight": 1.8
+        },
+        {
+          "category": "emotion",
+          "value": "calm",
+          "weight": 2.2
+        }
+      ],
+      "بحر قريب": [
+        {
+          "category": "environment",
+          "value": "water",
+          "weight": 2.2
+        }
+      ],
+      "ضباب كثيف": [
+        {
+          "category": "weather",
+          "value": "fog",
+          "weight": 2.8
+        }
+      ],
+      "الانوار تنعكس على الشوارع": [
+        {
+          "category": "light",
+          "value": "glow",
+          "weight": 2.4
+        }
+      ],
+      "الأنوار تنعكس على الشوارع": [
+        {
+          "category": "light",
+          "value": "glow",
+          "weight": 2.4
+        }
+      ]
+    },
+    "en": {
+      "felt at peace": [
+        {
+          "category": "emotion",
+          "value": "calm",
+          "weight": 2.8
+        }
+      ],
+      "felt afraid": [
+        {
+          "category": "emotion",
+          "value": "fear",
+          "weight": 3.0
+        }
+      ],
+      "full of stars": [
+        {
+          "category": "environment",
+          "value": "space",
+          "weight": 2.4
+        },
+        {
+          "category": "time",
+          "value": "night",
+          "weight": 1.7
+        }
+      ],
+      "light reflected on the water": [
+        {
+          "category": "light",
+          "value": "glow",
+          "weight": 2.5
+        },
+        {
+          "category": "environment",
+          "value": "water",
+          "weight": 1.7
+        }
+      ],
+      "quiet city": [
+        {
+          "category": "environment",
+          "value": "city",
+          "weight": 1.8
+        },
+        {
+          "category": "emotion",
+          "value": "calm",
+          "weight": 2.2
+        }
+      ],
+      "nearby sea": [
+        {
+          "category": "environment",
+          "value": "water",
+          "weight": 2.2
+        }
+      ],
+      "dense fog": [
+        {
+          "category": "weather",
+          "value": "fog",
+          "weight": 2.8
+        }
+      ]
+    }
+  },
+  "هادئ": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 1.8
+    }
+  ],
+  "هادئا": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 1.8
+    }
+  ],
+  "هادئة": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 1.8
+    }
+  ],
+  "مريح": [
+    {
+      "category": "emotion",
+      "value": "calm",
+      "weight": 1.8
+    }
+  ],
+  "ينزل": [
+    {
+      "category": "weather",
+      "value": "rain",
+      "weight": 1.2
+    }
+  ]
+}
