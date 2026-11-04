@@ -286,3 +286,12 @@ docker compose up --build
 ```
 
 Open `http://localhost`; the frontend proxies `/api` to the backend container.
+
+
+## Repository repair / quality gates
+
+The source tree now includes the required `backend/data/lexicon.json` and generated `backend/data/city_templates.json` (240 fictional profiles), Python dependencies, a backend Dockerfile and smoke tests. To regenerate the catalog deterministically, run `python scripts/generate_city_catalog.py` from the repository root.
+
+Run `cd backend && python -m pytest -q` and `cd frontend && npm install && npm run check`. GitHub Actions also runs these checks for pull requests. Verify the exact commit's workflow result before claiming a pass. The analyzer is a deterministic **lexicon-and-rule-based creative mapping**, not a validated interpretation of dreams and not a hosted LLM. The repository does not include a deployed public demo.
+
+The frontend and backend dependency lockfiles should be standardized before a commercial release.
