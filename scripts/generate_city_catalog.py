@@ -90,6 +90,7 @@ def main():
                 "weather_effect": weather_effect,
             }
             cities.append(city)
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(cities, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Generated {len(cities)} city templates at {OUT}")
 
