@@ -39,3 +39,37 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run build
+
+  real-runtime-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: python -m pip install -r backend/requirements.txt 'playwright>=1.51,<2'
+      - run: python -m playwright install --with-deps chromium
+      - run: npm install --no-audit --no-fund
+        working-directory: frontend
+      - name: Run FastAPI + Vite and verify real 3D browser flow
+        shell: bash
+        run: |
+          (cd backend && python -m uvicorn app.main:app --host 127.0.0.1 --port 8000) > /tmp/dream-api.log 2>&1 &
+          (cd frontend && npm run dev -- --host 127.0.0.1) > /tmp/dream-ui.log 2>&1 &
+          trap 'cat /tmp/dream-api.log /tmp/dream-ui.log' EXIT
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(80):
+              try:
+                  urllib.request.urlopen("http://127.0.0.1:8000/api/ready",timeout=2)
+                  urllib.request.urlopen("http://127.0.0.1:5173/",timeout=2)
+                  break
+              except Exception:
+                  time.sleep(1)
+          else:
+              raise RuntimeError("API or frontend not ready")
+          PY
+          python scripts/browser_smoke.py
