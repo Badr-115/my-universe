@@ -22,7 +22,12 @@ export async function analyzeDream(dream: string, language: 'auto'|'ar'|'en'): P
   }
   if (!response.ok) {
     const detail = await response.json().catch(() => null)
-    throw new Error(detail?.detail ?? 'تعذر تحليل الحلم')
+    const message = typeof detail?.detail === 'string'
+      ? detail.detail
+      : response.status === 422
+        ? 'تعذر تحليل الحلم. تحقق من النص وحاول مرة أخرى.'
+        : 'تعذر تحليل الحلم'
+    throw new Error(message)
   }
   return response.json()
 }
