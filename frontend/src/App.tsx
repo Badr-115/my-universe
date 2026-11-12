@@ -32,7 +32,7 @@ export default function App() {
       <div className="hero-copy"><div className="eyebrow">DREAM → SIGNALS → CITY</div><h1>اكتب حلمك.<br/><em>وسنمنحه مدينة.</em></h1><p>محلل ثنائي اللغة يستخرج المشاعر والبيئة والطقس والزمن والأماكن، ثم يبني بصمة مدينة خيالية ويعرضها في مشهد ثلاثي الأبعاد.</p></div>
       <div className="composer panel">
         <div className="composer-head"><span>حلمك</span><select value={language} onChange={e => setLanguage(e.target.value as 'auto'|'ar'|'en')}><option value="auto">اكتشاف اللغة</option><option value="ar">العربية</option><option value="en">English</option></select></div>
-        <label className="sr-only" htmlFor="dream-input">نص الحلم</label><textarea id="dream-input" aria-describedby="dream-help" value={dream} onChange={e => setDream(e.target.value)} placeholder="اكتب الحلم كما تتذكره… التفاصيل الصغيرة مفيدة: لون، مكان، شعور، وقت، طقس، شخص أو شيء غريب." dir="auto" />
+        <label className="sr-only" htmlFor="dream-input">نص الحلم</label><textarea id="dream-input" aria-describedby="dream-help" maxLength={12000} value={dream} onChange={e => setDream(e.target.value)} placeholder="اكتب الحلم كما تتذكره… التفاصيل الصغيرة مفيدة: لون، مكان، شعور، وقت، طقس، شخص أو شيء غريب." dir="auto" />
         <div id="dream-help" className="composer-help">التفاصيل عن المكان واللون والطقس والشعور تساعد المحلل على بناء مدينة أكثر تميّزًا.</div><div className="examples">{examples.map(example => <button key={example} onClick={() => setDream(example)}>{example.slice(0, 44)}…</button>)}</div>
         <button className="primary" type="button" onClick={submit} disabled={loading} aria-busy={loading}>{loading ? 'جارٍ بناء المدينة…' : 'حوّل الحلم إلى مدينة  ↗'}</button>
         {error && <div className="error">{error}</div>}
